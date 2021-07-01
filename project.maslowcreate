@@ -1,0 +1,24 @@
+{
+    "atomType": "Molecule",
+    "name": "A project with a license ",
+    "x": 0,
+    "y": 0,
+    "uniqueID": 129701,
+    "ioValues": [],
+    "topLevel": true,
+    "allAtoms": [
+        {
+            "atomType": "Output",
+            "name": "Output",
+            "x": 0.9764428739693757,
+            "y": 0.5,
+            "uniqueID": 407109,
+            "ioValues": []
+        }
+    ],
+    "allConnectors": [],
+    "fileTypeVersion": 1,
+    "simplify": false,
+    "filetypeVersion": 1,
+    "circleSegmentSize": 2
+}
