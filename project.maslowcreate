@@ -10,8 +10,8 @@
         {
             "atomType": "Rectangle",
             "name": "Rectangle",
-            "x": 0.4958775029446408,
-            "y": 0.5038167938931297,
+            "x": 0.3235294117647059,
+            "y": 0.4312977099236641,
             "uniqueID": 789020,
             "ioValues": [
                 {
@@ -25,6 +25,44 @@
             ]
         },
         {
+            "atomType": "Extrude",
+            "name": "Extrude",
+            "x": 0.5379506641366224,
+            "y": 0.5458015267175573,
+            "uniqueID": 188674,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "atoms/129701/789020Rectangle"
+                },
+                {
+                    "name": "height",
+                    "ioValue": 10
+                }
+            ]
+        },
+        {
+            "atomType": "Add-BOM-Tag",
+            "name": "Add BOM Tag",
+            "x": 0.7476280834914611,
+            "y": 0.4541984732824427,
+            "uniqueID": 121364,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "atoms/129701/188674Extrude"
+                }
+            ],
+            "BOMitem": {
+                "BOMitemName": "name",
+                "numberNeeded": 1,
+                "costUSD": 2.5,
+                "source": "https://www.amazon.com/dp/B07H7GF337",
+                "totalNeeded": 1,
+                "radius": 0.015384615384615385
+            }
+        },
+        {
             "atomType": "Output",
             "name": "Output",
             "x": 0.9764428739693757,
@@ -33,7 +71,7 @@
             "ioValues": [
                 {
                     "name": "number or geometry",
-                    "ioValue": "atoms/129701/789020Rectangle"
+                    "ioValue": "atoms/129701/121364Add-BOM-Tag"
                 }
             ]
         }
@@ -41,9 +79,23 @@
     "allConnectors": [
         {
             "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 789020,
+            "ap2ID": 188674
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 188674,
+            "ap2ID": 121364
+        },
+        {
+            "ap1Name": "geometry",
             "ap2Name": "number or geometry",
             "ap2Primary": false,
-            "ap1ID": 789020,
+            "ap1ID": 121364,
             "ap2ID": 407109
         }
     ],
