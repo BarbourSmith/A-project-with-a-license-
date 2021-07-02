@@ -10,8 +10,8 @@
         {
             "atomType": "Rectangle",
             "name": "Rectangle",
-            "x": 0.3235294117647059,
-            "y": 0.4312977099236641,
+            "x": 0.1888045540796964,
+            "y": 0.3244274809160305,
             "uniqueID": 789020,
             "ioValues": [
                 {
@@ -27,13 +27,64 @@
         {
             "atomType": "Extrude",
             "name": "Extrude",
-            "x": 0.5379506641366224,
-            "y": 0.5458015267175573,
+            "x": 0.37571157495256163,
+            "y": 0.3091603053435114,
             "uniqueID": 188674,
             "ioValues": [
                 {
                     "name": "geometry",
                     "ioValue": "atoms/129701/789020Rectangle"
+                },
+                {
+                    "name": "height",
+                    "ioValue": 10
+                }
+            ]
+        },
+        {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.21631878557874762,
+            "y": 0.7290076335877863,
+            "uniqueID": 582537,
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 10
+                }
+            ]
+        },
+        {
+            "atomType": "Add-BOM-Tag",
+            "name": "Add BOM Tag",
+            "x": 0.49240986717267554,
+            "y": 0.583969465648855,
+            "uniqueID": 438086,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "atoms/129701/890401Extrude"
+                }
+            ],
+            "BOMitem": {
+                "BOMitemName": "A name",
+                "numberNeeded": 1,
+                "costUSD": 2.3,
+                "source": "www.example.com",
+                "totalNeeded": 1,
+                "radius": 0.015384615384615385
+            }
+        },
+        {
+            "atomType": "Extrude",
+            "name": "Extrude",
+            "x": 0.3956356736242885,
+            "y": 0.6641221374045801,
+            "uniqueID": 890401,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "atoms/129701/582537Circle"
                 },
                 {
                     "name": "height",
@@ -63,6 +114,48 @@
             }
         },
         {
+            "atomType": "Translate",
+            "name": "Translate",
+            "x": 0.6290322580645161,
+            "y": 0.7442748091603054,
+            "uniqueID": 941697,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "atoms/129701/438086Add-BOM-Tag"
+                },
+                {
+                    "name": "xDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "yDist",
+                    "ioValue": 20
+                },
+                {
+                    "name": "zDist",
+                    "ioValue": 0
+                }
+            ]
+        },
+        {
+            "atomType": "Group",
+            "name": "Group",
+            "x": 0.8406072106261859,
+            "y": 0.6335877862595419,
+            "uniqueID": 846810,
+            "ioValues": [
+                {
+                    "name": "3D shape 2",
+                    "ioValue": 10
+                },
+                {
+                    "name": "3D shape 3",
+                    "ioValue": 10
+                }
+            ]
+        },
+        {
             "atomType": "Output",
             "name": "Output",
             "x": 0.9764428739693757,
@@ -71,7 +164,7 @@
             "ioValues": [
                 {
                     "name": "number or geometry",
-                    "ioValue": "atoms/129701/121364Add-BOM-Tag"
+                    "ioValue": "atoms/129701/846810Group"
                 }
             ]
         }
@@ -93,9 +186,44 @@
         },
         {
             "ap1Name": "geometry",
-            "ap2Name": "number or geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 582537,
+            "ap2ID": 890401
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 438086,
+            "ap2ID": 941697
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 890401,
+            "ap2ID": 438086
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "3D shape 2",
             "ap2Primary": false,
             "ap1ID": 121364,
+            "ap2ID": 846810
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "3D shape 3",
+            "ap2Primary": false,
+            "ap1ID": 941697,
+            "ap2ID": 846810
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
+            "ap1ID": 846810,
             "ap2ID": 407109
         }
     ],
