@@ -190,6 +190,20 @@
             ]
         },
         {
+            "atomType": "Color",
+            "name": "Color",
+            "x": 0.6567982456140351,
+            "y": 0.8511450381679388,
+            "uniqueID": 740157,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "atoms/129701/846810Group"
+                }
+            ],
+            "selectedColorIndex": "15"
+        },
+        {
             "atomType": "Output",
             "name": "Output",
             "x": 0.9764428739693757,
@@ -238,6 +252,13 @@
             "ap2Primary": true,
             "ap1ID": 846810,
             "ap2ID": 282217
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 846810,
+            "ap2ID": 740157
         },
         {
             "ap1Name": "geometry",
