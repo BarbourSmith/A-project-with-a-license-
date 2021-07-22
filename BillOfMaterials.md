@@ -2,8 +2,6 @@
 # Bill Of Materials 
  |Part|Number Needed|Price|Source| 
  |----|----------|-----|-----|
-|name|1|$2.50|[Amazon](https://www.amazon.com/dp/B07H7GF337?tag=maslowcnc01-20)|
-|A name|1|$2.30|www.example.com|
-|Total: |2|$4.80| |
+|Total: |0|$0.00| |
 
- 3xCOG MSRP: $14.40
+ 3xCOG MSRP: $0.00
