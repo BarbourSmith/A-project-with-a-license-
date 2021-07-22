@@ -8,6 +8,15 @@
     "topLevel": true,
     "allAtoms": [
         {
+            "atomType": "Readme",
+            "name": "README",
+            "x": 0.09381443298969072,
+            "y": 0.2748091603053435,
+            "uniqueID": 582105,
+            "ioValues": [],
+            "readmeText": "This text is in the readme"
+        },
+        {
             "atomType": "Rectangle",
             "name": "Rectangle",
             "x": 0.1888045540796964,
@@ -188,6 +197,15 @@
                     "ioValue": "Tag String"
                 }
             ]
+        },
+        {
+            "atomType": "Readme",
+            "name": "README",
+            "x": 0.44742268041237115,
+            "y": 0.8969465648854962,
+            "uniqueID": 586142,
+            "ioValues": [],
+            "readmeText": "This text is also in the readme"
         },
         {
             "atomType": "Color",
