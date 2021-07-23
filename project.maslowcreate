@@ -119,6 +119,14 @@
             "selectedColorIndex": "10"
         },
         {
+            "atomType": "UploadSVG",
+            "name": "UploadSVG",
+            "x": 0.4267990074441687,
+            "y": 0.6946564885496184,
+            "uniqueID": 264047,
+            "ioValues": []
+        },
+        {
             "atomType": "Group",
             "name": "Group",
             "x": 0.8182665424044734,
