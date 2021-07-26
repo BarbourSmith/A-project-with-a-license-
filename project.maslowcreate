@@ -10,8 +10,8 @@
         {
             "atomType": "Molecule",
             "name": "Internal",
-            "x": 0.20119521912350596,
-            "y": 0.4389312977099236,
+            "x": 0.1931372549019608,
+            "y": 0.3511450381679389,
             "uniqueID": 201448,
             "ioValues": [],
             "topLevel": false,
@@ -120,12 +120,12 @@
         },
         {
             "atomType": "UploadSVG",
-            "name": "test.svg",
-            "x": 0.25588235294117645,
-            "y": 0.7022900763358778,
+            "name": "atom.svg",
+            "x": 0.2303921568627451,
+            "y": 0.7786259541984732,
             "uniqueID": 449641,
             "ioValues": [],
-            "fileName": "test.svg"
+            "fileName": "atom.svg"
         },
         {
             "atomType": "Group",
