@@ -120,12 +120,12 @@
         },
         {
             "atomType": "UploadSVG",
-            "name": "atom.svg",
+            "name": "test.svg",
             "x": 0.30392156862745096,
             "y": 0.7557251908396946,
             "uniqueID": 449641,
             "ioValues": [],
-            "fileName": "atom.svg"
+            "fileName": "test.svg"
         },
         {
             "atomType": "Group",
