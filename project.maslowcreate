@@ -122,6 +122,23 @@
             ]
         },
         {
+            "atomType": "Group",
+            "name": "Group",
+            "x": 0.6116236162361623,
+            "y": 0.33587786259541985,
+            "uniqueID": 374455,
+            "ioValues": [
+                {
+                    "name": "3D shape 1",
+                    "ioValue": 10
+                },
+                {
+                    "name": "3D shape 2",
+                    "ioValue": 10
+                }
+            ]
+        },
+        {
             "atomType": "Rectangle",
             "name": "Rectangle",
             "x": 0.257380073800738,
@@ -134,23 +151,6 @@
                 },
                 {
                     "name": "y length",
-                    "ioValue": 10
-                }
-            ]
-        },
-        {
-            "atomType": "Group",
-            "name": "Group",
-            "x": 0.6217712177121771,
-            "y": 0.48854961832061067,
-            "uniqueID": 374455,
-            "ioValues": [
-                {
-                    "name": "3D shape 1",
-                    "ioValue": 10
-                },
-                {
-                    "name": "3D shape 2",
                     "ioValue": 10
                 }
             ]
@@ -173,23 +173,6 @@
             ]
         },
         {
-            "atomType": "ExtractTag",
-            "name": "Extract Tag",
-            "x": 0.7444649446494465,
-            "y": 0.7213740458015268,
-            "uniqueID": 111567,
-            "ioValues": [
-                {
-                    "name": "geometry",
-                    "ioValue": "atoms/129701/374455Group"
-                },
-                {
-                    "name": "tag",
-                    "ioValue": "Tag String"
-                }
-            ]
-        },
-        {
             "atomType": "Output",
             "name": "Output",
             "x": 0.9764428739693757,
@@ -199,6 +182,23 @@
                 {
                     "name": "number or geometry",
                     "ioValue": "atoms/129701/374455Group"
+                }
+            ]
+        },
+        {
+            "atomType": "CutLayout",
+            "name": "Cut Layout",
+            "x": 0.794280442804428,
+            "y": 0.7786259541984732,
+            "uniqueID": 325836,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "atoms/129701/374455Group"
+                },
+                {
+                    "name": "Spacing",
+                    "ioValue": 5
                 }
             ]
         }
@@ -227,24 +227,24 @@
         },
         {
             "ap1Name": "geometry",
-            "ap2Name": "geometry",
-            "ap2Primary": true,
-            "ap1ID": 843128,
-            "ap2ID": 355985
-        },
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "geometry",
-            "ap2Primary": true,
-            "ap1ID": 374455,
-            "ap2ID": 111567
-        },
-        {
-            "ap1Name": "geometry",
             "ap2Name": "number or geometry",
             "ap2Primary": false,
             "ap1ID": 374455,
             "ap2ID": 407109
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": false,
+            "ap1ID": 374455,
+            "ap2ID": 325836
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 843128,
+            "ap2ID": 355985
         },
         {
             "ap1Name": "geometry",
