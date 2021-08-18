@@ -8,76 +8,34 @@
     "topLevel": true,
     "allAtoms": [
         {
-            "atomType": "Molecule",
-            "name": "Internal",
-            "x": 0.09132841328413284,
-            "y": 0.2633587786259542,
-            "uniqueID": 201448,
-            "ioValues": [],
-            "topLevel": false,
-            "allAtoms": [
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.08620689655172414,
+            "y": 0.25572519083969464,
+            "uniqueID": 517054,
+            "ioValues": [
                 {
-                    "atomType": "Circle",
-                    "name": "Circle",
-                    "x": 0.2051792828685259,
-                    "y": 0.4236641221374046,
-                    "uniqueID": 153537,
-                    "ioValues": [
-                        {
-                            "name": "diameter",
-                            "ioValue": 10
-                        }
-                    ]
-                },
-                {
-                    "atomType": "Extrude",
-                    "name": "Extrude",
-                    "x": 0.350597609561753,
-                    "y": 0.4236641221374046,
-                    "uniqueID": 519947,
-                    "ioValues": [
-                        {
-                            "name": "geometry",
-                            "ioValue": "atoms/129701/201448/153537Circle"
-                        },
-                        {
-                            "name": "height",
-                            "ioValue": 10
-                        }
-                    ]
-                },
-                {
-                    "atomType": "Output",
-                    "name": "Output",
-                    "x": 0.9800796812749004,
-                    "y": 0.5,
-                    "uniqueID": 515325,
-                    "ioValues": [
-                        {
-                            "name": "number or geometry",
-                            "ioValue": "atoms/129701/201448/519947Extrude"
-                        }
-                    ]
+                    "name": "diameter",
+                    "ioValue": 10
                 }
-            ],
-            "allConnectors": [
+            ]
+        },
+        {
+            "atomType": "Extrude",
+            "name": "Extrude",
+            "x": 0.20905172413793105,
+            "y": 0.33969465648854963,
+            "uniqueID": 622289,
+            "ioValues": [
                 {
-                    "ap1Name": "geometry",
-                    "ap2Name": "geometry",
-                    "ap2Primary": true,
-                    "ap1ID": 153537,
-                    "ap2ID": 519947
+                    "name": "geometry",
+                    "ioValue": "atoms/129701/517054Circle"
                 },
                 {
-                    "ap1Name": "geometry",
-                    "ap2Name": "number or geometry",
-                    "ap2Primary": false,
-                    "ap1ID": 519947,
-                    "ap2ID": 515325
+                    "name": "height",
+                    "ioValue": 10
                 }
-            ],
-            "fileTypeVersion": 1,
-            "simplify": false
+            ]
         },
         {
             "atomType": "Translate",
@@ -88,7 +46,7 @@
             "ioValues": [
                 {
                     "name": "geometry",
-                    "ioValue": "atoms/129701/201448/519947Extrude"
+                    "ioValue": "atoms/129701/622289Extrude"
                 },
                 {
                     "name": "xDist",
@@ -214,10 +172,17 @@
     ],
     "allConnectors": [
         {
-            "ap1Name": "Geometry",
+            "ap1Name": "geometry",
             "ap2Name": "geometry",
             "ap2Primary": true,
-            "ap1ID": 201448,
+            "ap1ID": 517054,
+            "ap2ID": 622289
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 622289,
             "ap2ID": 332724
         },
         {
